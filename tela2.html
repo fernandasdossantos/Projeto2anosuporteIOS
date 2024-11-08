@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="style2.css" media="screen" />
+    <title>Projeto 2º Ano Suporte</title>
+  </head>
+  <body>
+    <div class="container2"></div>
+
+<h1 class="cxtituloprincipal">Aponte a câmera do seu celular para os QR-Codes</h1>
+
+    <div class="caixaqr">
+      <div class="leitorqr" style="width: 350px" id="reader"></div>
+    </div>
+      <script src="html5-qrcode.min.js"></script>
+
+      <script>
+        function onScanSuccess(decodedText, decodedResult) {
+          // Aqui é o que acontece caso a leitura dê certo.
+          window.alert(` ${decodedText}`, decodedResult); //Esse aqui é o que vai aparecer na tela quando a leitura for bem sucedida. (lembrando que dá para alterar a string do que vai ser dita na janela de alerta antes do resultado). aqui está um backup do código :(window.alert(` Seu resultado foi: ${decodedText}`, decodedResult);)
+        }
+
+        var html5QrcodeScanner = new Html5QrcodeScanner("reader", {
+          fps: 10,
+          qrbox: 250,
+        });
+        html5QrcodeScanner.render(onScanSuccess);
+      </script>
+
+<div class="cxcheckboxpr">
+    
+    <div class="cxchkbx">
+      <h1 class="textochk">Lista de Evidências</h1>
+      <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <label for="vehicle1">Prints de Conversas</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="pedaço-de-vidro" />
+        <label for="vehicle2">Pedaço de Vidro</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="faca" />
+        <label for="vehicle3">Cama Ensanguentada</label><br /><br />
+        <input type="checkbox" id="vehicle1" name="vehicle4" value="cama-ensanguentada" />
+        <label for="vehicle4">Digitais</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle5" value="digitais" />
+        <label for="vehicle5">Fio de Cabelo</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle6" value="fio-de-cabelo" />
+        <label for="vehicle6">Pegadas</label><br /><br />
+        <input type="checkbox" id="vehicle1" name="vehicle7" value="pegadas" />
+        <label for="vehicle7">Pedaço de Pano</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle8" value="pedaco-de-pano" />
+        <label for="vehicle8">Vestígio de Pele</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle9" value="vestigio-de-pele" />
+        <label for="vehicle9">Faca</label><br /><br />
+        <input type="checkbox" id="vehicle1" name="vehicle10" value="namorado-da-vitima" />
+        <label for="vehicle10">Namorado da Vítima</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle11" value="vizinha" />
+        <label for="vehicle11">Vizinha</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle12" value="colega-de-trabalho" />
+        <label for="vehicle12">Colega de Trabalho</label><br /><br />
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="feedback2">
+  <button class="feedback2" onclick="voltarParaTelaInicial()" style="color: white;
+  background-color: rgba(0, 255, 76, 0.212);
+  font-size: 32px;
+  border-radius: 13px;
+  border: none;
+  height: 60px;
+  padding: 10px;
+  
+  
+  ">Feedback do Projeto</button>
+
+  <script>
+    function voltarParaTelaInicial() {
+        // Defina o valor específico para rolagem (por exemplo, 800 pixels)
+        const scrollPosition = 5740;
+        // Salva o valor no localStorage
+        localStorage.setItem("rolarAtePosicao", scrollPosition);
+        // Redireciona para a página inicial
+        window.location.href = "index.html";
+    }
+    </script>
+
+
+  </div>
+  <div class="cxvoltar">
+    <a href="index.html"><button class="voltar2">Tela Inicial</button></a>
+  </div>
+ <script src="tela2feedback.js"></script>
+ <script src="style3.css"></script>
+  </body>
+</html>

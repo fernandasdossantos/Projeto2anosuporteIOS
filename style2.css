@@ -1,0 +1,134 @@
+body {
+  overflow-x: hidden; /*Oculta a barra de rolagem horizontal, se der problema, retirar da body de todas as index.*/
+  background-size: 100vw;
+  background-image: url(dark-wood-background-800-x-1423-9vmx449e54wowlxg.jpg);
+}
+
+.cxtituloprincipal {
+  color: rgb(197, 188, 188);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.caixaqr {
+  display: flex;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgba(247, 136, 9, 0.26);
+}
+.leitorqr {
+  margin-left: ;
+}
+.cxcheckboxpr {
+  text-align: center;
+}
+.cxchkbx {
+  height: px;
+  padding-left: 20px;
+  border-radius: 15px;
+  background-image: url("2e3d607920e7fc5b30ef0417bdd3dc08.jpg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  text-align: start;
+}
+.textochk {
+  text-align: center;
+}
+.feedback2 {
+  padding-top: 20px;
+  text-align: center;
+  height: 60px;
+}
+.botaofeedback2 {
+  color: white;
+  background-color: rgba(255, 0, 221, 0.726);
+  font-size: 32px;
+  border-radius: 13px;
+  border: none;
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+.botaofeedback2:active {
+  background-color: #ffffff;
+  color: black;
+  transform: scale(1.1);
+}
+
+.voltar2 {
+  color: white;
+  background-color: rgba(181, 255, 8, 0.233);
+  font-size: 32px;
+  border-radius: 13px;
+  border: none;
+  height: 60px;
+  width: 310px;
+  transition: all 0.3s ease;
+}
+
+.voltar2:active {
+  background-color: #ffffff;
+  color: black;
+  transform: scale(1.1);
+}
+
+.cxvoltar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .cxtituloprincipal {
+    color: rgb(197, 188, 188);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .caixaqr {
+    padding: 22.5px;
+    border-radius: 15px;
+    background-color: rgba(247, 136, 9, 0.26);
+  }
+  .leitorqr {
+    margin-left: px;
+  }
+  .cxcheckboxpr {
+    text-align: center;
+  }
+  .cxchkbx {
+    height: px;
+    padding-left: 20px;
+    border-radius: 15px;
+    background-image: url("2e3d607920e7fc5b30ef0417bdd3dc08.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    text-align: start;
+  }
+  .textochk {
+    text-align: center;
+  }
+  .feedback2 {
+    padding-top: 20px;
+    text-align: center;
+    height: 60px;
+  }
+  .botaofeedback2 {
+    color: white;
+    background-color: rgba(15, 189, 15, 0.726);
+    font-size: 32px;
+    border-radius: 13px;
+    border: none;
+    height: 60px;
+  }
+  .voltar {
+    color: white;
+    background-color: rgba(11, 80, 228, 0.726);
+    font-size: 32px;
+    border-radius: 13px;
+    border: none;
+    height: 60px;
+    width: 310px;
+  }
+  .cxvoltar {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

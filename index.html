@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Projeto 2º Ano Suporte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Gothic:wght@400;700;800&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js" defer></script>
+  </head>
+  <body>
+
+
+    <script>
+      // Quando a página carregar
+      window.addEventListener("load", () => {
+          // Recupera o valor de rolagem do localStorage
+          const rolarAtePosicao = localStorage.getItem("rolarAtePosicao");
+      
+          if (rolarAtePosicao) {
+              // Converte o valor para número e rola até ele
+              window.scroll({
+                  top: Number(rolarAtePosicao),
+                  behavior: 'smooth'
+              });
+              // Remove o item do localStorage para evitar rolagem automática em futuros carregamentos
+              localStorage.removeItem("rolarAtePosicao");
+          }
+      });
+      </script>
+
+     <!--Essa é a caixa que aloca todos os itens de boas vindas, aqui começa.-->
+    <div id="cxwlc">
+      <!--Lembrando que tive que colocar ela antes da "cxpr" por causa do plano de fundo-->
+      
+      <div class="link-cabecalho"> <!--Esses são os inks do cabeçalho-->
+        <h3 class="link1">créditos</h3>
+        <h3 class="link2">feedback</h3>
+        <a href="tela2.html" style="text-decoration:none"><h3 class="link3">qr-code</h3></a>
+
+      </div>
+
+      <script src="links.js"></script>
+
+      <img
+      class="logo"
+      src="logocomnome.png"
+      alt="logo"/>
+    <h1 class="titulopr">Projeto 2º Ano Suporte</h1>
+    <!--título principal-->
+    <div class="cxdacxbtn">
+    <div class="cxbtn">
+     <button class="botao1">Começar</button>
+    <!--botão de começar-->
+     <button class="botao2">Feedback</button>
+  </div>
+  
+
+
+<script src="comecar.js"></script>
+<script src="feedback.js"></script>
+
+
+
+
+</div>
+<div class="cxcredito">
+  <div class="creditos">
+    <h2 style="color: rgba(240, 248, 255, 0.767);">Créditos</h2>
+  <h3 style="margin-right: 30px; color: rgba(240, 248, 255, 0.767);">
+    Eu, Valmar Souza Alcântara Neto, 
+    venho por meio desse Site demonstrar minha 
+    colaboração ao projeto do 2º Ano Suporte (2024), 
+    juntamente com Fernanda Santiago, e Luiz Fernando 
+    Batista Reis.</h3>
+  </div>
+</div>
+  </div>
+ 
+    </div>
+    <!--Aqui termina a caixa dos items de boas vindas-->
+    <div id="cxpr">
+      <!--Esse é o container principal, que aloca conteúdo e informações cruciais,
+      lembrando que "cxpr" é um termo para "caixa principal"-->
+
+      <!-- E todas as classes chmamadas de "conteudo" é o conteúdo da página-->
+
+      <div class="titulodoconteudo">
+        <!--Lembrando que existem diversas tags com a mesma classe, isso é pra facilitar e aplicar as
+        mesmas configurações em elementos semelhantes, como "titulodoconteudo" e "conteudo"-->
+        <h1>O que é Reconstituição de Eventos Criminais?</h1>
+      </div> <!--Lembrando que todos as classes chamada de "titulodoconteudo", são as caixa do título 
+      das informações (conteúdo)-->
+
+      <div class="conteudo">
+        <h4>
+          Você já deve ter ouvidor falar sobre a "Reconstituição de Eventos
+          Criminais" em algum momento, mas já parou pra pensar como ocorre esse 
+          procedimento? Bom, a Reconstituição de eventos criminais é quando a
+          polícia ou os investigadores tentam refazer, passo a passo, o que
+          aconteceu em um crime, com base nas evidências e depoimentos. Eles
+          voltam ao local do crime e reproduzem os movimentos, as ações, e o
+          cenário, como se estivesse acontecendo de novo. É um procedimento
+          muito importante para encontrar inconsistências e reforçar a
+          investigação.
+        </h4>
+      </div>
+
+      <div class="cximg1">
+        <img class="img1" src="1h1img.jpg" alt="imagem1" />
+      </div>
+
+      <div class="titulodoconteudo">
+        <h1>Aumento das Taxas de Homicídios:</h1>
+      </div>
+
+      <div class="conteudo">
+        <!--E esses são os conteúdos (as informações do caso), elas ficam abaixo do título, 
+        são duas caixas, uma em cima da outra, então tem que se atentar nas configurações das margens, 
+        pois o redimencionamento de janela às alteram, por isso, aqui eu usei uma "Media Querie" no CSS.-->
+
+        <h4>
+          O Brasil infelizmente apresentou um crescimento gigantescos nas taxas
+          de homicídios entre 1979 e 2011, com um aumento de quase 190% no
+          número de assassinatos. Em 2011, foram registrados mais de 52.000
+          homicídios no país, o que representa uma pessoa assassinada a cada 15
+          minutos. Os homicídios geraram grandes prejuízos econômicos, com
+          perdas estimadas em R$ 9 bilhões anuais. Isso inclui tanto a perda de
+          capital humano quanto os custos relacionados ao sistema de saúde
+          pública... Trágico... Mas isso não é só sobre dinheiro.
+        </h4> 
+      </div>
+
+      <div class="cximg2"> <!--Essas são as imagens da informação, nessa eu coloquei classes separadas,
+        pois tem imagens que possuem dimensões e resolução diferente uma das outras, portanto algumas precisaram de 
+        tratamento diferente-->
+        <img
+          class="img2"
+          src="homicidios-brasil-mundo-site-10-dez-2023-03.png"
+          alt="imagem2"
+        />
+      </div>
+
+      <div class="titulodoconteudo">
+        <h1>Perfil das Vítimas:</h1>
+      </div>
+
+      <div class="conteudo">
+        <h4>
+          As vítimas de homicídios no Brasil são em maioria jovens, do sexo
+          masculino, com baixa escolaridade e residentes em áreas de alto risco
+          social. A violência está concentrada em regiões específicas, como
+          favelas, e bairros periféricos (as famosas "quebradas) das grandes
+          cidades. A partir dos anos 1990, houve uma mudança no local onde os
+          homicídios ocorrem, com um aumento dos assassinatos em vias públicas,
+          muitas vezes com características de execução. O diabo é sujo demais
+          cara.
+        </h4>
+      </div>
+
+      <div class="cximg3">
+        <img
+          class="img3"
+          src="assassinato.png.1200x0_q95_crop.jpg"
+          alt="img3"
+        />
+      </div>
+
+      <div class="titulodoconteudo">
+        <h1>Qual é a importância?</h1>
+      </div>
+
+      <div class="conteudo">
+        <h4>
+          A reconstituição de eventos criminais é importante porque ajuda a
+          esclarecer pontos que, às vezes, não ficam tão claros apenas com
+          depoimentos ou análises técnicas. Ela permite que os investigadores
+          visualizem como o crime pode ter acontecido, testando as versões dos
+          envolvidos e comparando com as evidências físicas, como marcas de
+          sangue, trajeto das balas, ou o comportamento das pessoas no local.
+
+          <p>
+            é crucial para verificar se a versão apresentada por testemunhas ou
+            suspeitos é possível e faz sentido diante da realidade dos fatos.
+            Também pode revelar novos detalhes que passaram despercebidos,
+            corrigir falhas e até trazer à tona contradições, ajudando a definir
+            a linha de investigação. Para o julgamento, a reconstituição pode
+            oferecer uma visão mais precisa do que ocorreu, fortalecendo o
+            processo de busca pela verdade.
+          </p>
+        </h4>
+      </div>
+
+      <div class="cximg4">
+        <img
+          class="img4"
+          src="c22d75f815daeaaa376e7a17e65202cd.webp"
+          alt="img4"
+        />
+      </div>
+
+      <div class="conteudo">
+        <h4>
+          Na reconstituição de eventos criminais, participam investigadores e
+          peritos que coordenam o processo, além de suspeitos e/ou testemunhas
+          para refazerem suas versões. Advogados de defesa e acusação também
+          podem estar presentes, junto com policiais para segurança. Promotores
+          e, às vezes, juízes acompanham em casos mais graves. Todos participam
+          para esclarecer os fatos e verificar a coerência das versões com as
+          evidências.
+        </h4>
+      </div>
+
+      <div class="caixafinal">
+        <h1 class="titulofinal">Clique Aqui para Investigar!</h1>
+        <div class="caixadaseta">
+          <img
+            class="seta"
+            src=""/>
+        </div>
+        <a href="tela2.html"</a> <!--Esse botão vai pra tela do qr-code-->
+        <button class="botaoqr">Começar a investigação</button></a>
+        <h4 class="instrucao">
+          Instruções: Os QR-Codes espalhados pela sala escondem uma pista. Após
+          ser redirecionado para a tela de escaneamento aponte a câmera do seu
+          celular.
+        </h4>
+        
+        <!---era para o botão creçer e diminuir no clique.-->
+        <script> 
+          function ativarBotao(botaoqr) {
+            botaoqr.classList.add('ativo');
+            setTimeout(() => {
+              botaoqr.classList.remove('ativo');
+            }, 200); // Efeito dura 200ms
+          }
+        </script>
+
+        <div class="caixagif">
+          <img class="gif" src="instrução.gif" alt="instrução" />
+        </div>
+        <h1 style="font-size: 38px; position: absolute; top: 5800px; color: rgba(255, 0, 0, 0.89); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; left: 115px;">Feedback</h1>
+        <h1 style="font-size: 20px; position: absolute; top: 5875px; color: rgba(255, 255, 255, 0.89); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 15px;">Você pode também avaliar o nosso projeto, basta preencher o formulário com nome e o feedback que desejar.</h1>
+      </div>
+
+
+      <div class="formfeedback">
+        <form id="formulario-contato" action="https://formsubmit.co/bdvalmar@gmail.com" method="POST">
+          <h3 class="titulo-formulario" style="color: aliceblue;">Avalie o nosso Projeto!</h3>
+             <label style="color: aliceblue; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">
+                 Nome
+                 <input type="text" name="Nome" placeholder="Escreva seu nome aqui:" required/>
+             </label>
+             <label style="color: aliceblue; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">
+                 Feedback
+                 <textarea name="info" placeholder="Comente o que achou do Projeto:"></textarea>
+             </label>
+      
+             <button class="enviar" type="submit">Enviar</button>
+             <input type="hidden" name="_captcha" value="false">
+             <input type="hidden" name="_next" value="index.html">
+         </form>
+        </div>
+        <div class="obrigado">
+        <h1 style="color: aliceblue; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Obrigado por participar!</h1>
+          <a href="index.html"><button class="voltar">voltar</button></a>
+
+      </div>
+    </div>
+
+  </body>
+</html>
